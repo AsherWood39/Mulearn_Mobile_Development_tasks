@@ -16,11 +16,11 @@ void main() {
   print("Enter your hobbies (seperated by commas):");
   String? input = stdin.readLineSync();
   List<String> hobbies = [];
+
   if (input != null && input.isNotEmpty) {
     hobbies = input.split(',').map((hobby) => hobby.trim()).toList();
   }
-
-  print('\n--- D . E . T . A . I . L . S ---');
+  print('------------ . D . E . T . A . I . L . S . -------------');
   print('\n\tName: $name');
   print('\tPhone Number: $ph');
   print('\tAge: $age');
@@ -31,5 +31,5 @@ void main() {
   for (String hobby in hobbies) {
     print("\t\t- $hobby");
   }
-  print('\n----------------------------------');
+  print('---------------------');
 }
